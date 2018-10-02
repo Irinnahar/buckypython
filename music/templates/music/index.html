@@ -1,0 +1,22 @@
+{% extends 'music/base.html' %}
+
+{% block body %}
+<div class="container-fluid ">
+    {% for album in all_album %}
+    <a href="{% url 'music:details' album.id %}">
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="{{album.album_logo}}" alt="Card image cap">
+            <div class="card-body">
+                <h2 class="card-title">{{album.album_title}}</h2>
+                <h4> {{album.artist}} </h4>
+
+                <a href="{% url 'music:details' album.id %}" class="btn btn-primary">View Details</a>
+            </div>
+        </div>
+
+    </a>
+
+    {% endfor %}
+</div>
+
+{% endblock %}

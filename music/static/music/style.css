@@ -1,0 +1,28 @@
+body{
+    background: url(./images/background.jpg);
+    font-family: 'Lato', sans-serif;
+}
+a.navbar-brand {
+    font-family: 'Satisfy', cursive;
+}
+#nav-search {
+    width: 235px;
+    height: 35px;
+    margin-left: 35px;
+}
+#nav-btn {
+    height: 35px;
+    line-height: 0;
+}
+a, a:hover {
+    color: gray;
+    text-decoration: none;
+}
+.card {
+    display: inline-flex;
+    padding: 20px;
+    margin: 20px 10px;
+}
+#table-top {
+    margin-bottom: 30px;
+}

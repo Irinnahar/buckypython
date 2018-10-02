@@ -1,0 +1,42 @@
+{% extends 'music/base.html' %}
+{% block title %} Album Details {% endblock %}
+{% block body %}
+<div class="container-fluid d-flex">
+
+    <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="{{album.album_logo}}" alt="Card image cap">
+        <div class="card-body">
+            <h3>{{album.album_title}} </h3>
+            <h4>{{album.artist}} </h4>
+            <p>{{album.genre}} </p>
+        </div>
+    </div>
+    <div class="card" style="width: 50rem;">
+
+        <div class="card-body">
+                <table class="table">
+                    <div id="table-top">
+                        <button class="btn btn-primary">View All</button>
+                        <a>Add new song</a>
+                    </div>
+                        <thead>
+                          <tr>
+
+                            <th scope="col">Title</th>
+                            <th scope="col">Audio File</th>
+                            <th scope="col">Favorite</th>
+                            <th scope="col">Actions</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+
+                          </tr>
+                        </tbody>
+                      </table>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
